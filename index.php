@@ -6,7 +6,7 @@ if(!empty($_POST)){
 
 $headers = 'From: reservas@foodhallrd.com';
 mail('reservas@foodhallrd.com', 
-'Reservacion Francesco Trattoria', 
+'Reservacion Julieta Brasserie', 
 'Enviado por:' . "\t" . $_POST['name'] . "\r\n" . 'Mensaje:'. "\t". $_POST['message'] .
 "\n\rEmail: \t" . $_POST['email'],
 $headers);
@@ -38,11 +38,13 @@ $headers);
 
 ?>
 
+
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Julieta Brasserie</title>
-	<link rel="shortcut icon" href="images/faviconFrancesco.png">
+	<link rel="shortcut icon" href="#">
 
 	<!--Import Google Icon Font-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -64,12 +66,12 @@ $headers);
 	<nav class="fMenu" role="navigation">
 		<div class="nav-wrapper container ">
 			<a href="#" class="brand-logo">
-				<img src="images/francesco-trattoria-logo.png" width="120px">
+				<img src="images/julietalogo.png" width="120px">
 			</a>
 			<ul class="right center hide-on-med-and-down light titulo11 ">
 				<li><a href="#">INICIO</a></li>
 				<li><a href="#nosotros">NOSOTROS</a></li>
-				<li><a href="#menu">MEN&Uacute</a></li>
+				<li><a href="#menu">MEN&Uacute;</a></li>
 				<li><a href="#galeria">GALERIA</a></li>
 				<li><a href="#reservas">RESERVAS</a></li>
 				<li><a href="#contacto">CONTACTO</a></li>
@@ -93,7 +95,13 @@ $headers);
 	<!--Nav Bar End -->
 
 	<!--Fondo     -->
-	`
+ <div class="col s12">
+ 	<div id="index-banner" class="parallax-container"> 
+ 		<div class="parallax"> 
+ 			<img src="images/imgCentral.png" > 
+ 		</div> 
+ 	</div> 
+ </div>
 
 
 
@@ -108,7 +116,7 @@ $headers);
 					<div  class="col s12 m10 l10 scrollspy" id="nosotros">
 						<h2 class="white-text" style="margin-top: 1em;">NOSOTROS</h2>
 						<p class="white-text light titulo nosFont"><span itemprop="name">
-							<br>Una brasserie europea donde podrás disfrutar de una cocina clásica y moderna. Reconocido por sus desayunos, brunch y además un amplio menú de almuerzo y cena, ideal para reuniones de trabajo en un lugar casual y relajado. 
+							<br>Somos una brasserie Europea, donde podrás disfrutar de una cocina clásica y moderna. Reconocido por sus desayunos, brunch y además un amplio menú de almuerzo y cena, Ideal para reuniones de trabajo en un lugar casual y relajado. 
 						</p>
 						<div class="row"></div>
 						<div class="row"></div>
@@ -129,7 +137,7 @@ $headers);
 	<div class="row fMenu">
 		<section>
 			<div class="col s12 m12 l12 pad-col">
-				<img class="responsive-img" src="images/imageIndex2.png">
+				<img  src="images/imageIndex2.png">
 			</div>
 		</section>
 
@@ -140,7 +148,7 @@ $headers);
 	<div class="fMenu dPad">
 		<div class="row">
 			<section class="container">
-				<h1 class="titulo mTop center white-text">MEN&Uacute</h1>
+				<h1 class="titulo mTop center white-text">MEN&Uacute;</h1>
 			</section>	
 		</div>
 
@@ -254,7 +262,7 @@ $headers);
 									<h5 class="center">OUR FAVORITES</h5>
 									<div class="col s6">
 										<p class="center" style="margin-top: -.4em">NARANJA, ESPINACA, PIÑA</p>
-										<p class="center" style="margin-top: -.4em">FRESA, LIM&OacuteN, NARANJA</p>
+										<p class="center" style="margin-top: -.4em">FRESA, LIM&Oacute;N, NARANJA</p>
 										<p class="center" style="margin-top: -.4em">NARANJA, LIM&OacuteN, PIÑA</p>
 										<p class="center" style="margin-top: -.4em">GUINEO Y FRESA</p>
 									</div>
@@ -442,6 +450,7 @@ $headers);
 									<p class="center" style="margin-top: -.4em">Claras de Huevo / Potobello / Espinaca Cremosa / Ajonjol&iacute / Tomates Rostizados / Queso Emmental</p>
 								</div>
 								<!-- HOUSE END -->
+
 								<!-- CLASSICS -->
 								<div class="conteiner center">
 									<h2 class="center">CLASSICS</h2>
@@ -454,6 +463,7 @@ $headers);
 									<p class="center" style="margin-top: -.4em">2 Eggs Any Style / Pancakes / Jam&oacuten o Bacon / Papas Rostizadas</p>
 								</div>
 								<!-- CLASSICS END -->
+
 								<!-- PANCAKES -->
 								<div class="conteiner center">
 									<h2 class="center">PANCAKES &amp; WAFFLES</h2>
@@ -852,15 +862,15 @@ $headers);
 				<div class="row">
 					<div class="input-field col s12">
 						<textarea id="textarea1" class="materialize-textarea" name="message" placeholder="Escribir su mensaje junto a su numero de contacto"></textarea>
-						<label for="textarea1" class="white-text" >Mensaje</label>
+						<label for="textarea1" class="white-text">Mensaje</label>
 					</div>
-					<div class="input-field col s6">
+					<div class="input-field col m6 s12">
 						<button class="btn white black-text waves-effect waves-light">
 							<input type="submit" value="Enviar" onclick="<?php sendEmail();?>"> 
 
 						</button>
 					</div>
-					<div class="input-field col s6">
+					<div class="input-field col m6 s12">
 						<div class="g-recaptcha" data-sitekey="6Lf7_SQUAAAAAGrQQzSKR4_jLvqpB0LT4kTcB97c"></div>
 					</div>
 
@@ -884,7 +894,7 @@ $headers);
 		<div class="row">
 			<div class="col l6 s12"> 
 				<h5 class="white-text light titulo1" itemscope itemtype ="http://schema.org/Organization">CONTACTOS</h5>
-				<p class="grey-text text-lighten-4 light" itemprop="address">Gustavo Mej&iacutea Ricart Esq. Manuel de Jes&uacutes Troncoso Ens. Piantini.<br>Todos los días de 11:30 A.M. a 12:00 P.M. <br> <span itemprop="telephone">T. 809 475 1007</span></p>
+				<p class="grey-text text-lighten-4 light" itemprop="address">Gustavo Mej&iacutea Ricart Esq. Manuel de Jes&uacutes Troncoso Ens. Piantini.<br>Todos los días de 7:00 A.M. a 12:00 P.M. <br> <span itemprop="telephone">T. 809 475 1007</span></p>
 			</div>
 			<div class="col l4 offset-l2 s12">
 				<h5 class="white-text light titulo1">REDES SOCIALES</h5>
